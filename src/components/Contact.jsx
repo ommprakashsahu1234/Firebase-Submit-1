@@ -33,7 +33,7 @@ const submitData = async (event) => {
     data.append("file", file);
     data.append("upload_preset", "user_files");
 
-    const res = await fetch(`https://api.cloudinary.com/v1_1/dtquf8kx2/upload`, {
+    const res = await fetch(`{{Cloudinary Link}}`, {
       method: "POST",
       body: data,
     });
